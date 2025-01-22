@@ -9,6 +9,29 @@
   <link rel="icon" href="lunch.png" type="image/x-icon">
 
   <style>
+
+    #about {
+    padding-top: 5rem;
+    padding-bottom: 5rem; /* Adjust to create space below */
+    position: relative;
+  }
+
+  #download {
+    padding-top: 5rem;  /* Added padding to the top to avoid overlap */
+    padding-bottom: 3rem; /* Padding to avoid any bottom overlap */
+  }
+
+  /* Adjusting for smaller screens */
+  @media (max-width: 768px) {
+    #about {
+      padding-top: 3rem;
+      padding-bottom: 3rem;
+    }
+
+    #download {
+      padding-top: 4rem;
+    }
+  }
     /* Sticky Navbar */
     .navbar {
       position: sticky;
