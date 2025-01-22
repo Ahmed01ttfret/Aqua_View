@@ -73,53 +73,12 @@
     
   </section>
 
-
-  <section id="features" class="p-5 text-center bg-white">
-    <h2 class="fw-bold">Key Features</h2>
-    <div class="row mt-4">
-      <div class="col-md-4 mb-4">
-        <div class="p-4 bg-white shadow" style="box-shadow: 0 4px 8px rgba(0, 123, 255, 0.2); border-radius: 8px;">
-          <i class="bi bi-file-earmark-spreadsheet display-4 text-primary"></i>
-          <h5 class="mt-2">File Upload</h5>
-          <p>Upload CSV and XLSX files for quick analysis.</p>
-        </div>
-      </div>
-      <div class="col-md-4 mb-4">
-        <div class="p-4 bg-white shadow" style="box-shadow: 0 4px 8px rgba(0, 123, 255, 0.2); border-radius: 8px;">
-          <i class="bi bi-bar-chart display-4 text-primary"></i>
-          <h5 class="mt-2">Data Visualization</h5>
-          <p>View box plots, histograms, and time-series graphs.</p>
-        </div>
-      </div>
-      <div class="col-md-4 mb-4">
-        <div class="p-4 bg-white shadow" style="box-shadow: 0 4px 8px rgba(0, 123, 255, 0.2); border-radius: 8px;">
-          <i class="bi bi-lightbulb display-4 text-primary"></i>
-          <h5 class="mt-2">AI-Powered Analysis</h5>
-          <p>Ask Gemini AI your water-related questions for insights.</p>
-        </div>
-      </div>
-      <div class="col-md-4 mb-4">
-        <div class="p-4 bg-white shadow" style="box-shadow: 0 4px 8px rgba(0, 123, 255, 0.2); border-radius: 8px;">
-          <i class="bi bi-droplet display-4 text-primary"></i>
-          <h5 class="mt-2">Water Quality Index (WQI)</h5>
-          <p>Analyze water quality with WQI calculations to evaluate risks.</p>
-        </div>
-      </div>
-      <div class="col-md-4 mb-4">
-        <div class="p-4 bg-white shadow" style="box-shadow: 0 4px 8px rgba(0, 123, 255, 0.2); border-radius: 8px;">
-          <i class="bi bi-graph-up display-4 text-primary"></i>
-          <h5 class="mt-2">Trend Analysis</h5>
-          <p>Identify trends in water quality data over time for informed decisions.</p>
-        </div>
-      </div>
-    </div>
-  </section>
-  
-
-
   <section id="gallery" class="p-5 text-center bg-white">
     <h2 class="fw-bold">App Gallery</h2>
     <p>Explore screenshots of AquaView in action.</p>
+  
+    <!-- Desktop Screenshots -->
+    <h3 class="mt-4">Desktop Screenshots</h3>
     <div class="row mt-4">
       <div class="col-md-4 mb-4">
         <div class="card">
@@ -135,6 +94,22 @@
           </div>
         </div>
       </div>
+
+      <div class="col-md-4 mb-4">
+        <div class="card">
+          <img 
+            src="gemini.PNG" 
+            class="card-img-top" 
+            alt="AquaView Screenshot 1" 
+            data-bs-toggle="modal" 
+            data-bs-target="#imageModal" 
+            onclick="setModalImage('import.PNG', 'Screenshot of AquaView\'s file upload interface')">
+          <div class="card-body">
+            <p class="card-text">Screenshot of Gemini's action.</p>
+          </div>
+        </div>
+      </div>
+
       <div class="col-md-4 mb-4">
         <div class="card">
           <img 
@@ -157,23 +132,56 @@
             alt="AquaView Screenshot 3" 
             data-bs-toggle="modal" 
             data-bs-target="#imageModal" 
-            onclick="setModalImage('trend.PNG', 'Screenshot of AquaView\'s AI-powered analysis interface')">
+            onclick="setModalImage('trend.PNG', 'Screenshot of AquaView\'s trend analysis interface')">
           <div class="card-body">
-            <p class="card-text">Screenshot of AquaView's AI-powered analysis interface.</p>
+            <p class="card-text">Screenshot of AquaView's trend analysis interface.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  
+    <!-- Mobile Screenshots -->
+    <h3 class="mt-4">Mobile Screenshots</h3>
+    <div class="row mt-4">
+      <div class="col-md-4 mb-4">
+        <div class="card">
+          <img 
+            src="final.png" 
+            class="card-img-top" 
+            alt="AquaView Mobile Screenshot 1" 
+            data-bs-toggle="modal" 
+            data-bs-target="#imageModal" 
+            onclick="setModalImage('final.png', 'Screenshot of AquaView\'s final mobile interface')">
+          <div class="card-body">
+            <p class="card-text">Screenshot of AquaView's final mobile interface.</p>
           </div>
         </div>
       </div>
       <div class="col-md-4 mb-4">
         <div class="card">
           <img 
-            src="gemini.PNG" 
+            src="intro.png" 
             class="card-img-top" 
-            alt="AquaView Screenshot 4" 
+            alt="AquaView Mobile Screenshot 2" 
             data-bs-toggle="modal" 
             data-bs-target="#imageModal" 
-            onclick="setModalImage('gemini.PNG', 'Screenshot of AquaView\'s AI-powered analysis interface')">
+            onclick="setModalImage('intro.png', 'Screenshot of AquaView\'s intro mobile screen')">
           <div class="card-body">
-            <p class="card-text">Screenshot of AquaView's AI-powered analysis interface.</p>
+            <p class="card-text">Screenshot of AquaView's intro mobile screen.</p>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-4 mb-4">
+        <div class="card">
+          <img 
+            src="new_1.png" 
+            class="card-img-top" 
+            alt="AquaView Mobile Screenshot 3" 
+            data-bs-toggle="modal" 
+            data-bs-target="#imageModal" 
+            onclick="setModalImage('new_1.png', 'Screenshot of AquaView\'s new feature on mobile')">
+          <div class="card-body">
+            <p class="card-text">Screenshot of AquaView's new feature on mobile.</p>
           </div>
         </div>
       </div>
@@ -204,8 +212,6 @@
     }
   </script>
   
-  
-
 
   <section id="contact" class="p-5 text-center">
     <h2 class="fw-bold">We Value Your Suggestions</h2>
@@ -230,15 +236,19 @@
   </section>
   
   
-  
-
   <section id="download" class="p-5 text-center bg-light">
     <h2>Download AquaView</h2>
-    <p>Click the button below to download the AquaView executable file for Windows.</p>
-    <a >
-      <button class="btn btn-primary btn-lg">Download AquaView</button>
-    </a>
+    <p>Get AquaView for your device. The APK is ready for download, but the Windows executable is coming soon!</p>
+    <div class="mt-4">
+      <!-- APK Download Button -->
+      <a href="app-release.apk" download>
+        <button class="btn btn-success btn-lg me-2">Download APK</button>
+      </a>
+      <!-- EXE Download Button (disabled) -->
+      <button class="btn btn-primary btn-lg" disabled title="Executable not available yet due to licensing.">Download EXE</button>
+    </div>
   </section>
+  
   
   <!-- Bootstrap JS Bundle -->
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
