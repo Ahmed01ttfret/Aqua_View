@@ -236,28 +236,41 @@
     }
   </script>
   
+<section id="contact" class="p-5 text-center">
+  <h2 class="fw-bold">We Value Your Suggestions</h2>
+  <p>Have ideas, feedback, or suggestions? Let us know how we can improve AquaView!</p>
+  <div class="container mt-4">
+    <form onsubmit="sendMail(event)" class="text-start">
+      <div class="mb-3">
+        <label for="name" class="form-label">Your Name</label>
+        <input type="text" id="name" name="name" class="form-control" placeholder="Enter your name" required>
+      </div>
+      <div class="mb-3">
+        <label for="email" class="form-label">Your Email</label>
+        <input type="email" id="email" name="email" class="form-control" placeholder="Enter your email" required>
+      </div>
+      <div class="mb-3">
+        <label for="suggestion" class="form-label">Your Suggestion</label>
+        <textarea id="suggestion" name="suggestion" rows="4" class="form-control" placeholder="Write your suggestion here..." required></textarea>
+      </div>
+      <button type="submit" class="btn btn-primary">Submit Suggestion</button>
+    </form>
+  </div>
+</section>
 
-  <section id="contact" class="p-5 text-center">
-    <h2 class="fw-bold">We Value Your Suggestions</h2>
-    <p>Have ideas, feedback, or suggestions? Let us know how we can improve AquaView!</p>
-    <div class="container mt-4">
-      <form action="mailto:am7727339@gmail.com" method="GET" enctype="text/plain" class="text-start">
-        <div class="mb-3">
-          <label for="name" class="form-label">Your Name</label>
-          <input type="text" id="name" name="name" class="form-control" placeholder="Enter your name" required>
-        </div>
-        <div class="mb-3">
-          <label for="email" class="form-label">Your Email</label>
-          <input type="email" id="email" name="email" class="form-control" placeholder="Enter your email" required>
-        </div>
-        <div class="mb-3">
-          <label for="suggestion" class="form-label">Your Suggestion</label>
-          <textarea id="suggestion" name="suggestion" rows="4" class="form-control" placeholder="Write your suggestion here..." required></textarea>
-        </div>
-        <button type="submit" class="btn btn-primary">Submit Suggestion</button>
-      </form>
-    </div>
-  </section>
+<script>
+  function sendMail(event) {
+    event.preventDefault();
+    let name = document.getElementById("name").value;
+    let email = document.getElementById("email").value;
+    let suggestion = document.getElementById("suggestion").value;
+    
+    let mailtoLink = `mailto:am7727339@gmail.com?subject=Suggestion from ${encodeURIComponent(name)}&body=Name: ${encodeURIComponent(name)}%0AEmail: ${encodeURIComponent(email)}%0ASuggestion: ${encodeURIComponent(suggestion)}`;
+    
+    window.location.href = mailtoLink;
+  }
+</script>
+
   
   
   <section id="download" class="p-5 text-center bg-light">
